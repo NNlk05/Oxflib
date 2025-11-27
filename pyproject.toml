@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Oxflib"
+version = "0.1.0"
+description = "One Xml File Library"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "NNlk05" }]
+keywords = ["xml", "parser", "oxflib"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[tool.setuptools]
+package-dir = { "" = "oxflib/src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["oxflib/src"]
